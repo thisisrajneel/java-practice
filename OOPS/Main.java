@@ -2,7 +2,8 @@ package OOPS;
 
 public class Main {
     public static void main(String[] args) {
-        Car nissan = new Car("Nissan", 10000, 2023, "Black");
+        String[] nissanParts = new String[]{"Steering wheel","Chasis"};
+        Car nissan = new Car("Nissan", 10000, 2023, "Black", nissanParts);
         
         //Car dodge = new Car("Dodge", 11000, 2022, "White");
         Car dodge = new Car(nissan);
