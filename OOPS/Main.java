@@ -2,16 +2,11 @@ package OOPS;
 
 public class Main {
     public static void main(String[] args) {
-        Car nissan = new Car();
-        nissan.make = "Nissan";
-        nissan.price = 10000;
-        nissan.year = 2023;
-        nissan.color = "Black";
+        Car nissan = new Car("Nissan", 10000, 2023, "Black");
+        
+        Car dodge = new Car("Dodge", 11000, 2022, "White");
 
-        Car dodge = new Car();
-        dodge.make = "Dodge";
-        dodge.price = 11000;
-        dodge.year = 2022;
-        dodge.color = "White";
+        System.out.println("This " + nissan.color +  " colored car is made by " + nissan.make + " in " + nissan.year + " priced at " + nissan.price);
+        System.out.println("This " + dodge.color +  " colored car is made by " + dodge.make + " in " + dodge.year + " priced at " + dodge.price);
     }
 }
