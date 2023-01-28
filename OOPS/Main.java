@@ -7,7 +7,7 @@ public class Main {
         //Car dodge = new Car("Dodge", 11000, 2022, "White");
         Car dodge = new Car(nissan);
 
-        System.out.println("This " + nissan.color +  " colored car is made by " + nissan.make + " in " + nissan.year + " priced at " + nissan.price);
-        System.out.println("This " + dodge.color +  " colored car is made by " + dodge.make + " in " + dodge.year + " priced at " + dodge.price);
+        System.out.println("This " + nissan.getColor() +  " colored car is made by " + nissan.getMake() + " in " + nissan.getYear() + " priced at " + nissan.getPrice());
+        System.out.println("This " + dodge.getColor() +  " colored car is made by " + dodge.getMake() + " in " + dodge.getYear() + " priced at " + dodge.getPrice());
     }
 }
