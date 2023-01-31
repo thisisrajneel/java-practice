@@ -63,4 +63,19 @@ public class Car {
     public void setParts(String[] parts) {
         this.parts = Arrays.copyOf(parts, parts.length); // not referencing the same object
     }
+
+    @Override
+    public String toString() {
+        String s = "";
+        s = s +  "Make : " + this.make + "\n";
+        s = s +  "Price : " + this.price + "\n";
+        s = s +  "Year : " + this.year + "\n";
+        s = s +  "Color : " + this.color + "\n";
+        s = s +  "Parts : ";
+        for (int i = 0; i < this.parts.length; i++) {
+            s = s + this.parts[i] + " "; 
+        }
+        s+="\n";
+        return s;
+    }
 }

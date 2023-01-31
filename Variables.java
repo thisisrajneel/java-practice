@@ -16,5 +16,7 @@ public class Variables {
             }
             System.out.print("\n");
         }
+
+        sc.close();
     }
 }
