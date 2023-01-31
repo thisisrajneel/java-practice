@@ -64,6 +64,11 @@ public class Car {
         this.parts = Arrays.copyOf(parts, parts.length); // not referencing the same object
     }
 
+    public void drive() {
+        System.out.println("\nYou bought the beautiful " + this.year + " " + this.color + " " + this.make + "!");
+        System.out.println("Please drive your car to the nearest exit.\n");
+    }
+
     @Override
     public String toString() {
         String s = "";

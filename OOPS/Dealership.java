@@ -15,11 +15,16 @@ public class Dealership {
         }
     }
 
+    public void sell(int index) {
+        this.cars[index].drive();
+    }
+
     @Override
     public String toString() {
         String s = "";
         for (int i = 0; i < this.cars.length; i++) {
-            s = s + this.cars[i].toString();
+            s = s + "Parking Spot " + i + " :\n";
+            s = s + this.cars[i].toString() + "\n";
         }
         return s;
     }

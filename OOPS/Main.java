@@ -1,7 +1,10 @@
 package OOPS;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
         
         Car[] cars = new Car[] {
             new Car("Nissan", 5000, 2020, "red", new String[] {"tires", "keys"}),
@@ -13,5 +16,9 @@ public class Main {
 
         Dealership dealership = new Dealership(cars);
         System.out.println(dealership);
+        System.out.print("Pick which car you want to buy : ");
+        int index = sc.nextInt();
+        dealership.sell(index);
+        sc.close();
     }
 }
